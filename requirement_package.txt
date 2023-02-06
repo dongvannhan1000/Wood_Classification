@@ -1,0 +1,11 @@
+tensorflow
+tensorflow-addon
+keras
+configparser
+pickle
+scipy
+numpy
+scikit-image
+matplotlib
+h5py
+itertools

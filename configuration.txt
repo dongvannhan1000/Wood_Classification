@@ -1,0 +1,43 @@
+########################################### CONFIG FILE ###########################################
+
+
+
+
+
+            
+[CNN types]
+MyNetList = {"alexnet","vgg","Inception_ResNet_V2","ResNet","ResNet_LRN"}
+net_type = alexnet
+
+
+
+
+[data paths]
+data_dir = D:/DendroDataset/smaller_AlexNet/
+test_dir = D:/DendroDataset/smaller_AlexNet/fold_4/
+train_patches = ../Weights and Misc/train_patches_fold_4.hdf
+train_labels = ../Weights and Misc/train_labels_fold_4.hdf
+test_patches = ../Weights and Misc/test_patches_fold_4.hdf
+test_labels = ../Weights and Misc/test_labels_fold_4.hdf
+best_weights = ../Weights and Misc/best_weights_fold_4.h5
+history_saved = ../Weights and Misc/history_fold_4.png
+conf_mat_patches_saved = ../Weights and Misc/conf_mat_patches_fold4.p
+conf_mat_images_saved = ../Weights and Misc/conf_mat_images_fold4.p
+
+[general settings]
+total_folds_no = 4
+
+[data attributes]
+num_classes = 13
+patch_size = 32
+patches_per_species = 2000
+
+[training settings]
+num_epochs = 20
+batch_size = 500
+augment = True
+
+[testing settings]
+test_fold_id = 4
+stride_height = 1
+stride_width = 1
